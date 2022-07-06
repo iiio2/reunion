@@ -1,4 +1,4 @@
-import SelectedHeader from '../../models/selectedHeader';
+import SelectedHeader from '../../models/FilteredHeader';
 
 export const selectedHeader: SelectedHeader[] = [
   {

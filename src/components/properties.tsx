@@ -15,9 +15,9 @@ const Properties = (): JSX.Element => {
 
   const filteredProperties = () => {
     if (
-      selectedPrice ||
-      selectedPropertyType ||
-      selectedLocation ||
+      selectedPrice &&
+      selectedPropertyType &&
+      selectedLocation &&
       selectedDate
     ) {
       const price = selectedPrice.split('-');
