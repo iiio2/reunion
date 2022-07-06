@@ -2,7 +2,7 @@ export const selectedHeader = [
   {
     path: 'location',
     title: 'Location',
-    content: (value: string, setValue: any) => (
+    content: (value: string, setValue: React.ChangeEventHandler) => (
       <select value={value} onChange={setValue} className='form-select'>
         <option value='USA'>USA</option>
         <option value='UK'>UK</option>
@@ -14,7 +14,7 @@ export const selectedHeader = [
   {
     path: 'date',
     title: 'Select Move-in Date',
-    content: (value: string, setValue: any) => (
+    content: (value: string, setValue: React.ChangeEventHandler) => (
       <select value={value} onChange={setValue} className='form-select'>
         <option value='2022-02-03'>2022-02-03</option>
         <option value='2022-05-02'>2022-05-02</option>
@@ -25,7 +25,7 @@ export const selectedHeader = [
   {
     path: 'price',
     title: 'Price',
-    content: (value: string, setValue: any) => (
+    content: (value: string, setValue: React.ChangeEventHandler) => (
       <select value={value} onChange={setValue} className='form-select'>
         <option value='2000-3000'>$2000-$3000</option>
         <option value='3000-4000'>$3000-$4000</option>
@@ -36,7 +36,7 @@ export const selectedHeader = [
   {
     path: 'propertyType',
     title: 'Property Type',
-    content: (value: string, setValue: any) => (
+    content: (value: string, setValue: React.ChangeEventHandler) => (
       <select value={value} onChange={setValue} className='form-select'>
         <option value='House'>Houses</option>
         <option value='Workspace'>Workspaces</option>

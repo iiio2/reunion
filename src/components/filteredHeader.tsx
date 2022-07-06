@@ -32,25 +32,25 @@ const FilteredHeader = ({
           {head.path === 'location' &&
             head.content(
               selectedLocation,
-              (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) =>
                 setSelectedLocation(e.target.value)
             )}
           {head.path === 'price' &&
             head.content(
               selectedPrice,
-              (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) =>
                 setSelectedPrice(e.target.value)
             )}
           {head.path === 'date' &&
             head.content(
               selectedDate,
-              (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) =>
                 setSelectedDate(e.target.value)
             )}
           {head.path === 'propertyType' &&
             head.content(
               selectedPropertyType,
-              (e: React.ChangeEvent<HTMLTextAreaElement>) =>
+              (e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) =>
                 setSelectedPropertyType(e.target.value)
             )}
         </div>
