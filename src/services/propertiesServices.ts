@@ -1076,6 +1076,22 @@ const properties = () => {
         area: '9x15',
       },
     },
+
+    {
+      id: '68',
+      title: 'Nakota House',
+      price: 2500,
+      img: house02,
+      location: 'Cardiff, UK',
+      popular: true,
+      date: '2022-01-10',
+      propertyType: {
+        name: 'House',
+        rooms: 3,
+        bathrooms: 2,
+        area: '9x14',
+      },
+    },
   ];
 };
 
