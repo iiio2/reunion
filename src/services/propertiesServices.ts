@@ -853,6 +853,22 @@ const properties = () => {
         area: '9x15',
       },
     },
+
+    {
+      id: '54',
+      title: 'Feda Co.',
+      price: 3000,
+      img: office01,
+      location: 'Romania',
+      popular: false,
+      date: '2022-02-03',
+      propertyType: {
+        name: 'Workspace',
+        rooms: 3,
+        bathrooms: 2,
+        area: '9x15',
+      },
+    },
   ];
 };
 
