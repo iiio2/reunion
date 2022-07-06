@@ -1,4 +1,6 @@
-export const selectedHeader = [
+import SelectedHeader from '../../models/selectedHeader';
+
+export const selectedHeader: SelectedHeader[] = [
   {
     path: 'location',
     title: 'Location',

@@ -4,14 +4,14 @@ interface PropertyProps {
   properties: Property[];
 }
 
-const SingleProperty = ({ properties }: PropertyProps) => {
+const SingleProperty = ({ properties }: PropertyProps): JSX.Element => {
   const data =
     properties.length > 1 ? (
-      <p>{properties.length} properties show</p>
+      <p>{properties.length} properties showing</p>
     ) : properties.length === 1 ? (
-      <p>{properties.length} properties shows</p>
+      <p>{properties.length} properties showing</p>
     ) : (
-      <p>No properties found in this criteria</p>
+      <p>No properties to show</p>
     );
   return (
     <div className='row'>
