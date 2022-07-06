@@ -1092,6 +1092,22 @@ const properties = () => {
         area: '9x14',
       },
     },
+
+    {
+      id: '69',
+      title: 'Hut Ed',
+      price: 2500,
+      img: office01,
+      location: 'Peru',
+      popular: true,
+      date: '2022-01-10',
+      propertyType: {
+        name: 'Workspace',
+        rooms: 3,
+        bathrooms: 3,
+        area: '9x14',
+      },
+    },
   ];
 };
 
