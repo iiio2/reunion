@@ -4,6 +4,7 @@ import Property from '../models/Property';
 import propertiesSerivces from '../services/propertiesServices';
 import SingleProperty from './property';
 import FilteredHeader from './filteredHeader';
+import Header from './common/header';
 
 const Properties = (): JSX.Element => {
   const [properties, setProperties] = useState<Property[]>([]);
@@ -48,6 +49,7 @@ const Properties = (): JSX.Element => {
 
   return (
     <div className='properties'>
+      <Header properties={propertiesSerivces()} setProperties={setProperties} />
       <FilteredHeader
         selectedPropertyType={selectedPropertyType}
         setSelectedPropertyType={setSelectedPropertyType}
