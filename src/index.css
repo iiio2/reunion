@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  font-size: 1.5rem !important;
+}
+
+.card {
+  box-shadow: -1px 2px 11px 1px rgba(0, 0, 0, 0.71);
+  transition: all 0.7s linear;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
