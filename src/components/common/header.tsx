@@ -9,7 +9,7 @@ interface InputProps {
 const Header = ({ properties, setProperties }: InputProps): JSX.Element => {
   const [value, setValue] = useState<string>('');
 
-  const getSearchedProperties = () => {
+  const getSearchedProperties = (): void => {
     const result = properties.filter(
       (property) =>
         property.title.toLowerCase().includes(value.toLowerCase()) ||
