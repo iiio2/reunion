@@ -869,6 +869,38 @@ const properties = () => {
         area: '9x15',
       },
     },
+
+    {
+      id: '55',
+      title: 'Happy House',
+      price: 4200,
+      img: house01,
+      location: 'TX, USA',
+      popular: false,
+      date: '2022-02-03',
+      propertyType: {
+        name: 'House',
+        rooms: 4,
+        bathrooms: 2,
+        area: '9x17',
+      },
+    },
+
+    {
+      id: '56',
+      title: 'Ronald Kt.',
+      price: 3000,
+      img: office01,
+      location: 'Peru',
+      popular: false,
+      date: '2022-05-02',
+      propertyType: {
+        name: 'Workspace',
+        rooms: 4,
+        bathrooms: 3,
+        area: '9x13',
+      },
+    },
   ];
 };
 

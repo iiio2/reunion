@@ -23,6 +23,8 @@ const Properties = (): JSX.Element => {
       const price = selectedPrice.split('-');
       if (price.length !== 2) return null;
 
+      const properties = propertiesSerivces();
+
       const filterByProperty = _.filter(properties, function (property) {
         return (
           property.propertyType.name === selectedPropertyType &&
@@ -42,7 +44,7 @@ const Properties = (): JSX.Element => {
 
   useEffect(() => {
     getProperties();
-  }, [selectedPropertyType, selectedPrice, selectedLocation, selectedDate]);
+  }, []);
 
   return (
     <div className='properties'>
